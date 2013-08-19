@@ -6,9 +6,21 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+	<body>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+				<a class="brand" href="http://0.0.0.0:3000/statuses/">Treebook</a>
+				<ul class="nav">
+					<li class="active"><a href="http://0.0.0.0:3000/statuses/">Home</a></li>
+					<li><%= link_to "All Statuses", statuses_path %> </li>
 
-<%= yield %>
-
-</body>
+					</ul>
+					</div>
+			</div>
+					</div>
+				<div class= "container">
+					<%= yield %>
+				</div>
+	</body>
 </html>
